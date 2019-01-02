@@ -13,6 +13,7 @@ public class JavaLesson2 {
 //            nextDouble();
 //            nextFloat();
 //            nextLine()
+            System.out.println("You entered " + numberEntered);
         }
     }
 }
