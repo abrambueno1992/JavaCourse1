@@ -28,5 +28,15 @@ public class HelloWorld1 {
         String andAnotherString = randomString + ' ' + anotherString;
 
         System.out.println(andAnotherString);
+
+
+        String byteString = Byte.toString(bigByte);
+        String shortString = Short.toString(bigShort);
+        String intString = Integer.toString(bigInt);
+        String longString = Long.toString(bighLong);
+        String floatString = Float.toString(bigFloat);
+        String doubleString = Double.toString(bigDouble);
+        String booleanString = Boolean.toString(trueOrFalse);
+        
     }
 }
