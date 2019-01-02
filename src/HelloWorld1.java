@@ -42,7 +42,8 @@ public class HelloWorld1 {
         int doubleToInt = (int) aDoubleValue;
 
         int stringToInt = Integer.parseInt(intString);
-
+//      parseShort, parseLong, paserByte, parseFloat, parseDouble, parseBoolean
+        
         System.out.println(stringToInt);
 
     }
