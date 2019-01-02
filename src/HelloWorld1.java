@@ -41,7 +41,9 @@ public class HelloWorld1 {
         double aDoubleValue = 3.14546466564;
         int doubleToInt = (int) aDoubleValue;
 
-        System.out.println(doubleToInt);
+        int stringToInt = Integer.parseInt(intString);
+
+        System.out.println(stringToInt);
 
     }
 }
