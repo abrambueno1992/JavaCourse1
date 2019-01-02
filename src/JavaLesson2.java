@@ -9,6 +9,10 @@ public class JavaLesson2 {
         if (userInput.hasNextInt()) {
 //            .hasNextDouble
 //            .hasNextFloat
+            int numberEntered = userInput.nextInt();
+//            nextDouble();
+//            nextFloat();
+//            nextLine()
         }
     }
 }
