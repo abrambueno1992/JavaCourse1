@@ -35,6 +35,21 @@ public class JavaLesson2 {
             System.out.println(numberEntered + " / 2"  + " = " + numEnteredRemainder );
             numberEntered += 2;
             numberEntered -= 2;
+
+            numberEntered--;
+            numberEntered++;
+
+
+            int numberABS = Math.abs(numberEntered);
+            int whichIsBigger = Math.max(5, 7);
+            int whichIsSmaller = Math.min(5, 7);
+
+            double numSqrt = Math.sqrt(5.23);
+
+            int numCeiling = (int) Math.ceil(5.23); // 6 force to return int
+            int numFloor = (int) Math.floor(5.23); // 5 round down
+            int numRound = (int) Math.round(5.23); // 5
+
         } else {
             System.out.println("Enter an integer next time");
         }
