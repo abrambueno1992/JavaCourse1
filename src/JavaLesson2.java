@@ -28,7 +28,11 @@ public class JavaLesson2 {
 
             int numEnteredDivide2 = numberEntered / 2;
 
-            System.out.println(numberEntered + " / 2 " +  " = " + numEnteredDivide2 );
+            System.out.println(numberEntered + " % 2 " +  " = " + numEnteredDivide2 );
+
+            int numEnteredRemainder = numberEntered % 2;
+
+            System.out.println(numberEntered + " / 2"  + " = " + numEnteredRemainder );
         } else {
             System.out.println("Enter an integer next time");
         }
