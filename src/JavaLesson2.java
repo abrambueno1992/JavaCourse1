@@ -33,6 +33,8 @@ public class JavaLesson2 {
             int numEnteredRemainder = numberEntered % 2;
 
             System.out.println(numberEntered + " / 2"  + " = " + numEnteredRemainder );
+            numberEntered += 2;
+            numberEntered -= 2;
         } else {
             System.out.println("Enter an integer next time");
         }
