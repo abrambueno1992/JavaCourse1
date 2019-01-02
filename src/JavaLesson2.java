@@ -21,6 +21,10 @@ public class JavaLesson2 {
             int numEnteredMinus2 = numberEntered - 2;
 
             System.out.println(numberEntered + " - " + 2 + " = " + numEnteredMinus2);
+
+            int numEnteredTimesSelf = numberEntered * numberEntered;
+
+            System.out.println(numberEntered + " * " + numberEntered + " = " + numEnteredTimesSelf);
         } else {
             System.out.println("Enter an integer next time");
         }
