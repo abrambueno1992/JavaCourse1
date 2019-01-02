@@ -25,6 +25,10 @@ public class JavaLesson2 {
             int numEnteredTimesSelf = numberEntered * numberEntered;
 
             System.out.println(numberEntered + " * " + numberEntered + " = " + numEnteredTimesSelf);
+
+            int numEnteredDivide2 = numberEntered / 2;
+
+            System.out.println(numberEntered + " / 2 " +  " = " + numEnteredDivide2 );
         } else {
             System.out.println("Enter an integer next time");
         }
