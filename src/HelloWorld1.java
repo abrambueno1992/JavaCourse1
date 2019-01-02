@@ -43,7 +43,7 @@ public class HelloWorld1 {
 
         int stringToInt = Integer.parseInt(intString);
 //      parseShort, parseLong, paserByte, parseFloat, parseDouble, parseBoolean
-        
+
         System.out.println(stringToInt);
 
     }
