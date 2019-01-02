@@ -37,6 +37,11 @@ public class HelloWorld1 {
         String floatString = Float.toString(bigFloat);
         String doubleString = Double.toString(bigDouble);
         String booleanString = Boolean.toString(trueOrFalse);
-        
+
+        double aDoubleValue = 3.14546466564;
+        int doubleToInt = (int) aDoubleValue;
+
+        System.out.println(doubleToInt);
+
     }
 }
