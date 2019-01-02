@@ -14,6 +14,9 @@ public class JavaLesson2 {
 //            nextFloat();
 //            nextLine()
             System.out.println("You entered " + numberEntered);
+            int numEnteredTimes2 = numberEntered + numberEntered;
+
+            System.out.println(numberEntered + " " + numberEntered + " = " + numEnteredTimes2 );
         } else {
             System.out.println("Enter an integer next time");
         }
