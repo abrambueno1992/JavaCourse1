@@ -50,6 +50,9 @@ public class JavaLesson2 {
             int numFloor = (int) Math.floor(5.23); // 5 round down
             int numRound = (int) Math.round(5.23); // 5
 
+            int randomNumber = (int) (Math.random() * 11); // 1 to 10.0 to .99999
+            System.out.println("Random number is " + randomNumber);
+
         } else {
             System.out.println("Enter an integer next time");
         }
