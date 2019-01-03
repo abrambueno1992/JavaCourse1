@@ -24,5 +24,16 @@ public class JavaLesson3 {
         } else {
             System.out.println("Didn't match conditions " + randomNumber);
         }
+
+
+        /* Logical Operators:
+        6 logical operators
+        ! converts boolean into opposite (true is now false)
+        & checks to see if values on the left and right are equal, a boolean is returned
+        && checks to see if values on the left and right are equal and with data type, a boolean is returned
+        | returns true if either value on the left or right is true, else returns false
+        || returns true if either value on the left or right is true, else returns false
+        ^ returns true if there is 1 true and 1 false boolean value
+        */
     }
 }
