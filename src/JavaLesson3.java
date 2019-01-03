@@ -44,5 +44,31 @@ public class JavaLesson3 {
 
 
         // Ternary operators
+        int valueOne = 1;
+        int valueTwo = 2;
+
+        int biggestValue = (valueOne > valueTwo) ? valueOne : valueTwo;
+        System.out.println("Biggest value is " + biggestValue);
+
+
+        // Switch operator
+        char theGrade = 'B';
+        switch (theGrade) {
+            case 'A':
+                System.out.println("Great job");
+                break;
+            case 'B':
+                System.out.println("Good job");
+                break;
+            case 'C':
+                System.out.println("YES");
+                break;
+            case 'D':
+                System.out.println("Not good");
+                break;
+            default:
+                System.out.println("Bad");
+                break;
+        }
     }
 }
