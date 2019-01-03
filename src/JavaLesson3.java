@@ -35,5 +35,14 @@ public class JavaLesson3 {
         || returns true if either value on the left or right is true, else returns false
         ^ returns true if there is 1 true and 1 false boolean value
         */
+        if (!(false)) {
+            System.out.println("\n I turned false into true");
+        }
+        if ((false) ^ (true)) {
+            System.out.println("One true and false");
+        }
+
+
+        // Ternary operators
     }
 }
