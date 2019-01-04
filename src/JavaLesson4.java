@@ -1,4 +1,9 @@
+import java.util.Scanner;
+
 public class JavaLesson4 {
+
+    static  Scanner userInput = new Scanner(System.in);
+
     public static void main(String[] args) {
         int i = 1;
         while (i <= 20) {
@@ -30,5 +35,15 @@ public class JavaLesson4 {
             System.out.println(myPi);
         }
         System.out.println("Value of PI: " + Math.PI);
+
+
+        String contYorN = "Y";
+        int h = 1;
+        while (contYorN.equalsIgnoreCase("y")) {
+            System.out.println(h);
+            System.out.print("Continue y or n? ");
+            contYorN = userInput.nextLine();
+            h++;
+        }
     }
 }
