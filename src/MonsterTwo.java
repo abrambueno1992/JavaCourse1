@@ -1,6 +1,6 @@
 import java.lang.management.MonitorInfo;
 
-public class Monster {
+public class MonsterTwo {
     public final String TOMBSTONE = "Here lies a dead monster";
 
     private int health = 500;
@@ -30,7 +30,7 @@ public class Monster {
     }
 
     // constructor method
-    public Monster(int health, int attack, int movement) {
+    public MonsterTwo(int health, int attack, int movement) {
         this.health = health ;
         this.attack = attack;
         this.movement = movement;
@@ -38,21 +38,21 @@ public class Monster {
     }
 
     // Default constructor
-    public Monster() {
+    public MonsterTwo() {
 
     }
 
-    public Monster(int newHealth) {
+    public MonsterTwo(int newHealth) {
         health = newHealth;
     }
 
-    public Monster(int newHealth, int newAttack) {
+    public MonsterTwo(int newHealth, int newAttack) {
         this(newHealth);
         attack = newAttack;
     }
 
     public static void main(String[] args) {
-        Monster Frank = new Monster();
+        MonsterTwo Frank = new MonsterTwo();
 
         System.out.println(Frank.attack);
     }
