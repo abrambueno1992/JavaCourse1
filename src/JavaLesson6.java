@@ -27,9 +27,17 @@ public class JavaLesson6 {
         }
 
         getAFile("./someStuff.txt");
+        try {
+            getAFileTwo("./someStuff.txt");
+
+        } catch (IOException e)  {
+            System.out.println("An IO Error Occurred");
+        }
 
     }
-
+    public static void getAFileTwo(String fileName) throws IOException, FileNotFoundException{
+        FileInputStream file = new FileInputStream(fileName);
+    }
     public static void getAFile(String fileName) {
         try {
             FileInputStream file = new FileInputStream(fileName);
@@ -40,9 +48,9 @@ public class JavaLesson6 {
         catch(IOException e) {
             System.out.println("Unknown IO Error");
         }
-        catch (ClassNotFoundException e) {
-            
-        }
+//        catch (ClassNotFoundException e) {
+//            System.out.println("No error");
+//        }
         catch(Exception e) {
             System.out.println("Some error occured.");
         }
