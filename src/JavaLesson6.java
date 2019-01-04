@@ -21,6 +21,8 @@ public class JavaLesson6 {
             System.out.println(a / 0);
         } catch (ArithmeticException e) {
             System.out.println("you can't do that");
+            System.out.println(e.getMessage());
+            System.out.println(e.toString());
         }
     }
 }
