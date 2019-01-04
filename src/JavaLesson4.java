@@ -45,5 +45,11 @@ public class JavaLesson4 {
             contYorN = userInput.nextLine();
             h++;
         }
+
+        int k = 10;
+        do {
+            System.out.println(k);
+            k++;
+        } while (k < 10);
     }
 }
