@@ -1,16 +1,45 @@
 import java.lang.management.MonitorInfo;
+import java.util.Arrays;
 
 public class MonsterTwo {
+    static char[][] battleBoard = new char[10][10];
+    public static void buildBattleBoard() {
+        for(char[] row : battleBoard) {
+            Arrays.fill(row, '*');
+        }
+    }
+
+    public static void redrawBoard() {
+        int k = 1;
+        while (k <= 30) {
+            System.out.print('-');
+            k++;
+        }
+        System.out.println();
+        for (int i = 0; i < battleBoard.length; i++) {
+            for (int j = 0; j < battleBoard[i].length; j++) {
+                System.out.print("|" + battleBoard[i][j] + "|");
+            }
+            System.out.println();
+        }
+        k = 1;
+        while (k <= 30) {
+            System.out.print('-');
+            k++;
+        }
+        System.out.println();
+    }
     public final String TOMBSTONE = "Here lies a dead monster";
 
     private int health = 500;
     private int attack = 20;
     private int movement = 2;
-    private int xPos = 0;
-    private int yPos = 0;
+
     private boolean alive = true;
 
     public String name = "Big monster";
+    public int xPos = 0;
+    public int yPos = 0;
 
     public int getAttack() {
         return attack;
