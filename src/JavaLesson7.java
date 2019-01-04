@@ -30,15 +30,24 @@ public class JavaLesson7 {
     }
 
     // constructor method
-    public Monster(int newHealth, int newAttack, int newMovement) {
-        health = newHealth;
-        attack = newAttack;
-        movement = newMovement;
+    public Monster(int health, int attack, int movement) {
+        this.health = health;
+        this.attack = attack;
+        this.movement = movement;
     }
 
     // Default constructor
     public Monster() {
 
+    }
+
+    public Monster(int newHealth) {
+        health = newHealth;
+    }
+
+    public Monster(int newHealth, int newAttack) {
+        this(newHealth);
+        attack = newAttack;
     }
 
 
