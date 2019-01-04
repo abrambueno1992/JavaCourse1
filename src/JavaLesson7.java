@@ -31,9 +31,10 @@ public class JavaLesson7 {
 
     // constructor method
     public Monster(int health, int attack, int movement) {
-        this.health = health;
-        this.attack = attack;
-        this.movement = movement;
+        this.health = newHealth ;
+        this.attack = newAttack;
+        this.movement = newMovement;
+        return ;
     }
 
     // Default constructor
@@ -48,6 +49,12 @@ public class JavaLesson7 {
     public Monster(int newHealth, int newAttack) {
         this(newHealth);
         attack = newAttack;
+    }
+
+    public static void main(String[] args) {
+        Monster Frank = new Monster();
+
+        System.out.println(Frank.attack);
     }
 
 
