@@ -23,6 +23,7 @@ public class JavaLesson6 {
             System.out.println("you can't do that");
             System.out.println(e.getMessage());
             System.out.println(e.toString());
+            e.printStackTrace();
         }
     }
 }
