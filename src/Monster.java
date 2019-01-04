@@ -1,6 +1,6 @@
 import java.lang.management.MonitorInfo;
 
-public class JavaLesson7 {
+public class Monster {
     public final String TOMBSTONE = "Here lies a dead monster";
 
     private int health = 500;
@@ -31,10 +31,10 @@ public class JavaLesson7 {
 
     // constructor method
     public Monster(int health, int attack, int movement) {
-        this.health = newHealth ;
-        this.attack = newAttack;
-        this.movement = newMovement;
-        return ;
+        this.health = health ;
+        this.attack = attack;
+        this.movement = movement;
+
     }
 
     // Default constructor
