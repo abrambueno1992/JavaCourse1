@@ -88,7 +88,8 @@ public class JavaLesson9 {
         Arrays.sort(numToSort);
         System.out.println(Arrays.toString(numToSort));
 
-
+        int whereis50 = Arrays.binarySearch(numToSort, 50);
+        System.out.println(whereis50);
 
     }
 }
