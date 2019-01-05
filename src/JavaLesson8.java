@@ -8,6 +8,11 @@ public class JavaLesson8 {
         // MonsterTwo(int health, int attack, int movement, String name)
 
         Monsters[0] = new MonsterTwo(1000, 20, 1, "Frank");
+        Monsters[1] = new MonsterTwo(800, 30, 2, "Frank");
+        Monsters[2] = new MonsterTwo(600, 50, 1, "Frank");
+        Monsters[3] = new MonsterTwo(1200, 20, 1, "Frank");
+
+        MonsterTwo.redrawBoard();
     }
 
 }
