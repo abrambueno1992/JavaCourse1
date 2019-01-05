@@ -73,6 +73,21 @@ public class JavaLesson9 {
         // print out an array
         System.out.println(Arrays.toString(numberCopy));
 
+        int[] moreNumbers = new int[100];
+        Arrays.fill(moreNumbers, 2);
+
+        char[][] boardGame = new char[10][10];
+        for (char[] row : boardGame ) {
+            Arrays.fill(moreNumbers, '*');
+        }
+
+        int[] numToSort = new int[10];
+        for (int i = 0; i < 10; i++) {
+            numToSort[i] = (int) (Math.random() * 100);
+        }
+        Arrays.sort(numToSort);
+        System.out.println(Arrays.toString(numToSort));
+
 
 
     }
