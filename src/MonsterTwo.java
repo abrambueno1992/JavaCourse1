@@ -53,7 +53,7 @@ public class MonsterTwo {
     public int getHealth() {
         return health;
     }
-    public int getAlive() {
+    public boolean getAlive() {
         return alive;
     }
 
