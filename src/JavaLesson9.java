@@ -23,5 +23,35 @@ public class JavaLesson9 {
             System.out.print("| " + j + " ");
         }
         System.out.println("|");
+
+        String[][] multiArray = new String[10][10];
+        for (int i = 0; i < multiArray.length; i++) {
+            for (int j = 0; j < multiArray[i].length; j++) {
+                multiArray[i][j] = i + " " + j;
+            }
+        }
+        k = 1;
+        while (k <= 61) {
+            System.out.println('-');
+            k++;
+        }
+        System.out.println();
+
+        for (int i = 0; i < multiArray.length; i++) {
+            for (int j = 0; j < multiArray[i].length; j++) {
+                System.out.println("| " + multiArray[i][j] + " ");
+            }
+            System.out.println("|");
+        }
+
+        k = 1;
+        while (k <= 61) {
+            System.out.println('-');
+            k++;
+        }
+        System.out.println();
+
+
+
     }
 }
