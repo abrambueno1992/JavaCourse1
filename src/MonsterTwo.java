@@ -1,5 +1,6 @@
 import java.lang.management.MonitorInfo;
 import java.util.Arrays;
+import org.apache.commons.lang3.ArrayUtils;
 
 public class MonsterTwo {
     static char[][] battleBoard = new char[10][10];
@@ -38,8 +39,10 @@ public class MonsterTwo {
     private boolean alive = true;
 
     public String name = "Big monster";
+    public char nameChar1 = 'B';
     public int xPos = 0;
     public int yPos = 0;
+    public static int numOfMonsters = 0;
 
     public int getAttack() {
         return attack;
@@ -50,6 +53,9 @@ public class MonsterTwo {
     public int getHealth() {
         return health;
     }
+    public int getAlive() {
+        return alive;
+    }
 
     public void setHealth(int decreaseHealth) {
         health = health - decreaseHealth;
@@ -59,11 +65,29 @@ public class MonsterTwo {
     }
 
     // constructor method
-    public MonsterTwo(int health, int attack, int movement) {
+    public MonsterTwo(int health, int attack, int movement, String name) {
         this.health = health ;
         this.attack = attack;
         this.movement = movement;
+        this.name = name;
 
+        int maxXBoardSpace = battleBoard.length - 1;
+        int maxYBoardSpace = battleBoard[0].length - 1;
+
+        int randNumX, randNumY;
+
+        do {
+            randNumX = (int) (Math.random() * maxXBoardSpace);
+            randNumY  = (int) (Math.random() * maxYBoardSpace);
+        } while (battleBoard[randNumX][randNumY] != '*');
+
+        this.xPos = randNumX;
+        this.yPos = randNumY;
+
+        this.nameChar1 = this.name.charAt(0);
+
+        battleBoard[this.yPos][this.xPos] = this.nameChar1;
+        numOfMonsters++;
     }
 
     // Default constructor
