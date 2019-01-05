@@ -55,13 +55,23 @@ public class JavaLesson9 {
             System.out.print(row);
         }
         System.out.println("\n");
-
+        // To use an enhanced loop this is the format:
+        // for (dataType[] varForRow : arrayName)
         for (String[] rows : multiArray) {
             for (String column : rows) {
                 System.out.print("| " + column + " ");
             }
             System.out.println("|");
         }
+
+        int[] numberCopy = Arrays.copyOf(numberArray, 5);
+        for (int row : numberCopy) {
+            System.out.print(row);
+        }
+        System.out.println("\n");
+
+        // print out an array
+        System.out.println(Arrays.toString(numberCopy));
 
 
 
