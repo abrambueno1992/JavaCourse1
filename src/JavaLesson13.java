@@ -27,5 +27,9 @@ public class JavaLesson13 {
 
         System.out.println("2nd char: " + letters.charAt(1));
         System.out.println(letters.compareTo(moreLetters)); // if equal === 0
+        System.out.println(letters.contains("abc"));
+        System.out.println(letters.endsWith("de"));
+        // startsWith, indexOf
+        System.out.println(letters.indexOf("cd"));
     }
 }
