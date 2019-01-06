@@ -34,5 +34,8 @@ public class JavaLesson13 {
 
         System.out.println("Length : " + letters.length());
         System.out.println(letters.replace("abc", "xy"));
+
+        String[] letterArray = letters.split("");
+        System.out.println(Arrays.toString(letterArray));
     }
 }
