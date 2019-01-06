@@ -39,6 +39,10 @@ public class JavaLesson12 {
 
         System.out.println("\nAli index at: " + names.indexOf("Ali Said"));
 
+        System.out.println("\nList Empty: " + names.isEmpty());
+        System.out.println("\nHow Many: " + names.size());
+        System.out.println("\nLook without Error: " + names.peek());
+
 
     }
 }
