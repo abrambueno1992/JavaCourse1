@@ -57,8 +57,5 @@ public class JavaLesson12 {
         System.out.println(Arrays.toString(nameArray));
 
         names.clear();
-
-
-
     }
 }
