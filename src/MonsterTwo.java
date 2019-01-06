@@ -165,9 +165,14 @@ public class MonsterTwo {
                 if (onMySpace(monster, i, arrayItemIndex)) {
                     // <<<<<<>>>>>>>><<<<<<>>>>>
                     isSpaceOpen = true;
+                    break;
+                } else {
+                    isSpaceOpen = false;
                 }
             }
         } // end of while loop
+        battleBoard[this.yPos][this.xPos] = this.nameChar1;
+
     } // End of moveMonster
     public boolean onMySpace(MonsterTwo[] monster, int indexToChk1, int indexToChk2) {
         if ((monster[indexToChk1].xPos) == (monster[indexToChk2].xPos) && (monster[indexToChk1].yPos) == (monster[indexToChk2].yPos)){

@@ -16,13 +16,14 @@ public class JavaLesson10 {
         Monsters[3] = new MonsterTwo(1200, 20, 1, "Frank");
 
         MonsterTwo.redrawBoard();
-    }
-    for (MonsterTwo m : Monsters) {
-        if (m.getAlive()) {
-            int arrayItemIndex = ArrayUtils.indexOf(Monsters, m);
-            m.moveMonster(Monsters, arrayItemIndex);
+        for (MonsterTwo m : Monsters) {
+            if (m.getAlive()) {
+                int arrayItemIndex = ArrayUtils.indexOf(Monsters, m);
+                m.moveMonster(Monsters, arrayItemIndex);
 
+            }
         }
+        MonsterTwo.redrawBoard();
     }
-    MonsterTwo.redrawBoard();
+
 }
