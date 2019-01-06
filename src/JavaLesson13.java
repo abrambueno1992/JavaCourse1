@@ -42,5 +42,10 @@ public class JavaLesson13 {
         System.out.println(Arrays.toString(charArray));
 
         System.out.println(letters.substring(1, 4));
+        System.out.println(letters.toUpperCase());
+        System.out.println(letters.toLowerCase());
+
+        String randString = "     abfgfhfj    ";
+        System.out.println(randomString.trim());
     }
 }
