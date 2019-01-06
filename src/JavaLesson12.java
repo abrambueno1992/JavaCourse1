@@ -43,6 +43,10 @@ public class JavaLesson12 {
         System.out.println("\nHow Many: " + names.size());
         System.out.println("\nLook without Error: " + names.peek());
 
+        System.out.println("\nremove first element: " + nameCopy.poll());
+        System.out.println("\nremove last element: " + nameCopy.pollLast());
+
+
 
     }
 }
