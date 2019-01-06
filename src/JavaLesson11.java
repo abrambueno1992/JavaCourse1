@@ -23,9 +23,16 @@ public class JavaLesson11 {
         names.set(0, "John Adams");
 
         names.remove(3);
+//        names.removeRange(0,1);
 
         for (int i = 0; i < names.size(); i++) {
             System.out.println(names.get(i));
+        }
+
+        System.out.println(names);
+
+        for (String i : names) {
+            System.out.println(i);
         }
     }
 }
