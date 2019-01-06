@@ -31,5 +31,8 @@ public class JavaLesson13 {
         System.out.println(letters.endsWith("de"));
         // startsWith, indexOf
         System.out.println(letters.indexOf("cd"));
+
+        System.out.println("Length : " + letters.length());
+        System.out.println(letters.replace("abc", "xy"));
     }
 }
