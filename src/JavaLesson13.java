@@ -47,5 +47,10 @@ public class JavaLesson13 {
 
         String randString = "     abfgfhfj    ";
         System.out.println(randomString.trim());
+
+        StringBuilder randSB = new StringBuilder("A random value");
+
+        System.out.println(randSB.append(" again"));
+        System.out.println(randSB);
     }
 }
