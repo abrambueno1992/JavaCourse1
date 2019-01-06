@@ -40,5 +40,12 @@ public class JavaLesson11 {
         while (indivItems.hasNext()) {
             System.out.println(indivItems.next());
         }
+
+        ArrayList nameCopy = new ArrayList();
+        ArrayList nameBackup = new ArrayList();
+
+        nameCopy.addAll(names);
+
+        String paulYoung = "Paul young";
     }
 }
