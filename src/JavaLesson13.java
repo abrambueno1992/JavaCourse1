@@ -26,5 +26,6 @@ public class JavaLesson13 {
         String moreLetters = "fghijk";
 
         System.out.println("2nd char: " + letters.charAt(1));
+        System.out.println(letters.compareTo(moreLetters)); // if equal === 0
     }
 }
