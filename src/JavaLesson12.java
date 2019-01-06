@@ -52,6 +52,12 @@ public class JavaLesson12 {
             System.out.println(name);
         }
 
+        Object[] nameArray = new Object[4];
+        nameArray = names.toArray();
+        System.out.println(Arrays.toString(nameArray));
+
+        names.clear();
+
 
 
     }
