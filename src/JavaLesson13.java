@@ -54,5 +54,7 @@ public class JavaLesson13 {
         System.out.println(randSB);
         System.out.println(randSB.delete(15, 21));
         System.out.println(randSB.capacity());
+        randSB.ensureCapacity(60);
+        System.out.println(randSB.capacity());
     }
 }
