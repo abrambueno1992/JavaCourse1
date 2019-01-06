@@ -47,6 +47,7 @@ public class JavaLesson12 {
         System.out.println("\nremove last element: " + nameCopy.pollLast());
 
         nameCopy.push("Noah Peee");
+        nameCopy.pop();
         for (String name : nameCopy) {
             System.out.println(name);
         }
