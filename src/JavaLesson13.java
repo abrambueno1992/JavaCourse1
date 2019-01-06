@@ -59,5 +59,9 @@ public class JavaLesson13 {
         System.out.println(randSB.length());
         randSB.trimToSize();
         System.out.println(randSB.capacity());
+        System.out.println(randSB.insert(1, "nother"));
+
+        String oldSB = randSB.toString();
+        // charAt() indexOf() lastIndexOf() subString()
     }
 }
