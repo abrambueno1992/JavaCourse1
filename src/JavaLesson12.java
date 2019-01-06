@@ -26,5 +26,19 @@ public class JavaLesson12 {
         System.out.println("\nFirst Index: " + names.get(0));
         System.out.println("\nLast Index: " + names.getLast());
 
+        LinkedList<String> nameCopy = new LinkedList<String>(names);
+        System.out.println("\nnameCopy: " + nameCopy);
+
+        if (names.contains("Noah Pete")){
+            System.out.println("\nNoah is here");
+        }
+
+        if (names.containsAll(nameCopy)) {
+            System.out.println("\nCollections are the same");
+        }
+
+        System.out.println("\nAli index at: " + names.indexOf("Ali Said"));
+
+
     }
 }
