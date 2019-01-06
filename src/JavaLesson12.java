@@ -46,6 +46,11 @@ public class JavaLesson12 {
         System.out.println("\nremove first element: " + nameCopy.poll());
         System.out.println("\nremove last element: " + nameCopy.pollLast());
 
+        nameCopy.push("Noah Peee");
+        for (String name : nameCopy) {
+            System.out.println(name);
+        }
+
 
 
     }
