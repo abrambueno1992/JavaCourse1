@@ -63,5 +63,10 @@ public class JavaLesson11 {
         if (names.isEmpty()) {
             System.out.println("ArrayList name is Empty");
         }
+
+        Object[] moreNames = new Object[4];
+        moreNames = nameCopy.toArray();
+
+        System.out.println(Arrays.toString(moreNames));
     }
 }
