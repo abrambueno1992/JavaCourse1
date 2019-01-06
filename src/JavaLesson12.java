@@ -19,6 +19,8 @@ public class JavaLesson12 {
         names.remove(4); // removes element at index 4
         names.remove("Noah Pete"); // removes name
 
+        System.out.println("\nFirst Index: " + names.get(0));
+
         for (String name : names) {
             System.out.println(name);
         }
