@@ -53,5 +53,9 @@ public class JavaLesson11 {
         if (names.contains(paulYoung)) {
             System.out.println("Paul is here");
         }
+
+        if (names.containsAll(nameCopy)) {
+            System.out.println("Everything in nameCopy is in names");
+        }
     }
 }
