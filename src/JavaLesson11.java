@@ -57,5 +57,11 @@ public class JavaLesson11 {
         if (names.containsAll(nameCopy)) {
             System.out.println("Everything in nameCopy is in names");
         }
+
+        names.clear();
+
+        if (names.isEmpty()) {
+            System.out.println("ArrayList name is Empty");
+        }
     }
 }
