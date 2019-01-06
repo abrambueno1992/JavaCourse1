@@ -37,5 +37,10 @@ public class JavaLesson13 {
 
         String[] letterArray = letters.split("");
         System.out.println(Arrays.toString(letterArray));
+
+        char[] charArray = letters.toCharArray();
+        System.out.println(Arrays.toString(charArray));
+
+        System.out.println(letters.substring(1, 4));
     }
 }
