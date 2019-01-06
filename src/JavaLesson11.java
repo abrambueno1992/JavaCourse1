@@ -20,8 +20,10 @@ public class JavaLesson11 {
 
         names.add(2, "Jack Ryan");
 
-        
         names.set(0, "John Adams");
+
+        names.remove(3);
+
         for (int i = 0; i < names.size(); i++) {
             System.out.println(names.get(i));
         }
