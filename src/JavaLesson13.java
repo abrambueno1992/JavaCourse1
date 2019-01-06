@@ -18,8 +18,13 @@ public class JavaLesson13 {
         if (upperCaseStr.equals(lowerCaseStr)) { // false
             System.out.println("They're equal");
         }
-        if (upperCaseStr.equalsIgnoreCase(lowerCaseStr)) { // false
+        if (upperCaseStr.equalsIgnoreCase(lowerCaseStr)) { // true
             System.out.println("They're equal");
         }
+
+        String letters = "abcde";
+        String moreLetters = "fghijk";
+
+        System.out.println("2nd char: " + letters.charAt(1));
     }
 }
