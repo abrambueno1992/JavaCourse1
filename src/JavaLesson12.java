@@ -9,6 +9,9 @@ public class JavaLesson12 {
         names.add("Ahmed Banana");
         names.add("Ali Said");
 
+        names.addLast("Nathy Martian"); //last
+        names.addFirst("Josh Smash"); // first
+
         for (String name : names) {
             System.out.println(name);
         }
