@@ -47,5 +47,11 @@ public class JavaLesson11 {
         nameCopy.addAll(names);
 
         String paulYoung = "Paul young";
+
+        names.add(paulYoung);
+
+        if (names.contains(paulYoung)) {
+            System.out.println("Paul is here");
+        }
     }
 }
