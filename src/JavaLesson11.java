@@ -34,5 +34,11 @@ public class JavaLesson11 {
         for (String i : names) {
             System.out.println(i);
         }
+
+        Iterator indivItems = names.iterator();
+
+        while (indivItems.hasNext()) {
+            System.out.println(indivItems.next());
+        }
     }
 }
