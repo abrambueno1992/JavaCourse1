@@ -120,4 +120,60 @@ public class MonsterTwo {
             alive = false;
         }
     }
+    public void moveMonster(MonsterTwo[] monster, int arrayItemIndex) {
+        boolean isSpaceOpen = true;
+        int maxXBoardSpace = battleBoard.length - 1;
+        int maxYBoardSpace = battleBoard[0].length - 1;
+
+        while (isSpaceOpen) {
+            int randMoveDirection = (int) (Math.random() * 4);
+            int randMoveDistance = (int) (Math.random() * (this.getMovement() + 1));
+
+            System.out.println(randMoveDistance + " " + randMoveDirection);
+            battleBoard[this.yPos][this.xPos] = '*';
+
+            if (randMoveDirection == 0) {
+                if ((this.yPos - randMoveDistance) < 0) {
+                    this.yPos = 0;
+                } else {
+                    this.yPos = this.yPos - randMoveDistance;
+                }
+            } else if (randMoveDirection == 1) {
+                if ((this.yPos + randMoveDistance) > maxXBoardSpace) {
+                    this.xPos = maxXBoardSpace;
+                } else {
+                    this.xPos = this.xPos + randMoveDistance;
+                }
+            } else if (randMoveDirection == 2) {
+                if ((this.yPos + randMoveDistance) > maxYBoardSpace) {
+                    this.yPos = maxYBoardSpace;
+                } else {
+                    this.yPos = this.yPos + randMoveDistance;
+                }
+            } else  {
+                if ((this.xPos - randMoveDistance) < 0) {
+                    this.xPos = 0;
+                } else {
+                    this.xPos = this.xPos - randMoveDistance;
+                }
+            }
+            for (int i = 0; i < monster.length; i++) {
+                // Monster Frank x = 1 y = 3
+                if (i == arrayItemIndex) {
+                    continue;
+                }
+                if (onMySpace(monster, i, arrayItemIndex)) {
+                    // <<<<<<>>>>>>>><<<<<<>>>>>
+                    isSpaceOpen = true;
+                }
+            }
+        } // end of while loop
+    } // End of moveMonster
+    public boolean onMySpace(MonsterTwo[] monster, int indexToChk1, int indexToChk2) {
+        if ((monster[indexToChk1].xPos) == (monster[indexToChk2].xPos) && (monster[indexToChk1].yPos) == (monster[indexToChk2].yPos)){
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
