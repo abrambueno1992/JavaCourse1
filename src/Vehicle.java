@@ -19,4 +19,9 @@ public class Vehicle implements Drivable{
     public void setSpeed(double speed) {
         this.theSpeed = speed;
     }
+
+    public Vehicle(int wheels, double speed) {
+        this.numOfWheels = wheels;
+        this.theSpeed = speed;
+    }
 }
