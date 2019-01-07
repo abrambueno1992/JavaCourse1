@@ -29,6 +29,15 @@ public class JavaLesson14 {
         Cats tempCat  = (Cats) randAnimal;
         System.out.println(tempCat.favToy);
 
+        System.out.println(((Cats) randAnimal).favToy); // different menthod of doing the same as above
+
+        if (randAnimal instanceof Cats) {
+            System.out.println(randAnimal.getName() + " is a Cat");
+        }
+        if (randAnimal instanceof Animals) {
+            System.out.println(randAnimal.getName() + " is a Animal");
+        }
+
 
 
     }
