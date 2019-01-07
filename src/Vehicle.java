@@ -1,4 +1,4 @@
-public class Vehicle implements Drivable{
+public class Vehicle extends Crashable implements Drivable {
     int numOfWheels = 2;
     double theSpeed = 0;
 
@@ -23,5 +23,13 @@ public class Vehicle implements Drivable{
     public Vehicle(int wheels, double speed) {
         this.numOfWheels = wheels;
         this.theSpeed = speed;
+    }
+
+    public void setCarStrength(int carStrength) {
+        this.carStrength = carStrength;
+    }
+
+    public int getCarStrength() {
+        return this.carStrength;
     }
 }
