@@ -17,11 +17,19 @@ public class JavaLesson14 {
     }
 
     public static void acceptAnimal(Animals randAnimal) {
+        // polymorphism
         System.out.println();
         System.out.println(randAnimal.getName());
         System.out.println(randAnimal.favFood);
         System.out.println();
 
         randAnimal.walkAround();
+
+
+        Cats tempCat  = (Cats) randAnimal;
+        System.out.println(tempCat.favToy);
+
+
+
     }
 }
