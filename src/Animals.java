@@ -1,6 +1,6 @@
 public class Animals {
     private String name = "Animal";
-    private String favFood = "Food";
+    public String favFood = "Food";
 
     protected final void changeName(String newName) {
         this.name = newName;
