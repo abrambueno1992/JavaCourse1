@@ -9,5 +9,7 @@ public class JavaLesson16 {
         System.out.println(superCar.hashCode());
 
         System.out.println(superCar.getClass());
+
+        System.out.println(superCar.getClass().getName());
     }
 }
