@@ -23,5 +23,7 @@ public class JavaLesson16 {
         int randNum = 100;
         System.out.println(Integer.toString(randNum));
 
+
+
     }
 }
