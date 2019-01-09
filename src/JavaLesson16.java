@@ -28,5 +28,8 @@ public class JavaLesson16 {
 
         System.out.println(superTruck.getWheel());
         System.out.println(superTruck2.getWheel());
+
+        System.out.println(superTruck.hashCode());
+        System.out.println(superTruck2.hashCode());
     }
 }
