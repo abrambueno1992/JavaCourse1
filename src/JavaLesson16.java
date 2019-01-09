@@ -23,7 +23,10 @@ public class JavaLesson16 {
         int randNum = 100;
         System.out.println(Integer.toString(randNum));
 
+        superTruck.setWheels(6);
+        Vehicle superTruck2 = (Vehicle)superTruck.clone();
 
-
+        System.out.println(superTruck.getWheel());
+        System.out.println(superTruck2.getWheel());
     }
 }
