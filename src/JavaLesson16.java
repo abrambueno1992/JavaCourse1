@@ -19,5 +19,9 @@ public class JavaLesson16 {
         System.out.println(superCar.getClass().getSuperclass());
 
         System.out.println(superCar.toString());
+
+        int randNum = 100;
+        System.out.println(Integer.toString(randNum));
+
     }
 }
