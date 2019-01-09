@@ -24,6 +24,9 @@ public class Vehicle extends Crashable implements Drivable {
         this.numOfWheels = wheels;
         this.theSpeed = speed;
     }
+    public Vehicle() {
+
+    }
 
     public void setCarStrength(int carStrength) {
         this.carStrength = carStrength;
