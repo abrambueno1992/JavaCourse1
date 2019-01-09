@@ -11,5 +11,9 @@ public class JavaLesson16 {
         System.out.println(superCar.getClass());
 
         System.out.println(superCar.getClass().getName());
+
+        if (superCar.getClass() == superTruck.getClass()) {
+            System.out.println("The same class");
+        }
     }
 }
