@@ -35,4 +35,8 @@ public class Vehicle extends Crashable implements Drivable {
     public int getCarStrength() {
         return this.carStrength;
     }
+
+    public String toString() {
+        return "Num of Wheels: " + this.numOfWheels;
+    }
 }

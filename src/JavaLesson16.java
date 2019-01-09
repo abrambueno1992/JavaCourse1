@@ -15,5 +15,9 @@ public class JavaLesson16 {
         if (superCar.getClass() == superTruck.getClass()) {
             System.out.println("The same class");
         }
+
+        System.out.println(superCar.getClass().getSuperclass());
+
+        System.out.println(superCar.toString());
     }
 }
