@@ -7,5 +7,7 @@ public class JavaLesson16 {
         System.out.println(superCar.equals(superTruck));
 
         System.out.println(superCar.hashCode());
+
+        System.out.println(superCar.getClass());
     }
 }
