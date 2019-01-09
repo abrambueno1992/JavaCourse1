@@ -5,5 +5,7 @@ public class JavaLesson16 {
         Vehicle superTruck = new Vehicle();
 
         System.out.println(superCar.equals(superTruck));
+
+        System.out.println(superCar.hashCode());
     }
 }
