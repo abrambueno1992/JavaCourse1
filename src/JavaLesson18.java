@@ -28,11 +28,12 @@ public class JavaLesson18 {
         }
 
         // threadName.setPriority to set a thread priority
+        eventPool.shutdown();
 
         try {
             Thread.sleep(20000);
         } catch (InterruptedException e) {
-            
+
         }
 
     }
