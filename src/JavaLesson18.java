@@ -27,5 +27,13 @@ public class JavaLesson18 {
             System.out.println(i.getPriority());
         }
 
+        // threadName.setPriority to set a thread priority
+
+        try {
+            Thread.sleep(20000);
+        } catch (InterruptedException e) {
+            
+        }
+
     }
 }
