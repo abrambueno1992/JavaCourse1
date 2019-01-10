@@ -23,5 +23,9 @@ public class JavaLesson18 {
             System.out.println(i.getName());
         }
 
+        for (Thread i : listOfThreads) {
+            System.out.println(i.getPriority());
+        }
+
     }
 }
