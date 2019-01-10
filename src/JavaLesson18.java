@@ -15,5 +15,13 @@ public class JavaLesson18 {
 
         System.out.println("Number of Threads: " + Thread.activeCount() );
 
+        Thread[] listOfThreads = new Thread[Thread.activeCount()];
+
+        Thread.enumerate(listOfThreads);
+
+        for (Thread i : listOfThreads) {
+            System.out.println(i.getName());
+        }
+
     }
 }
