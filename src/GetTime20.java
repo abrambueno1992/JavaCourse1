@@ -2,7 +2,7 @@ import java.util.*;
 import java.text.DateFormat;
 
 public class GetTime20 extends Thread {
-    public void rund () {
+    public void run () {
         Date rightNow;
         Locale currentLocale;
         DateFormat timeFormatter;
@@ -27,7 +27,7 @@ public class GetTime20 extends Thread {
             try {
                 Thread.sleep(2000);
             } catch (InterruptedException e) {
-                
+
             }
         }
     }
