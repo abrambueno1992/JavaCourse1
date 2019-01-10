@@ -23,6 +23,12 @@ public class GetTime20 extends Thread {
             System.out.println(timeOutput);
             System.out.println(dateOutput);
             System.out.println();
+
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                
+            }
         }
     }
 }
