@@ -57,6 +57,10 @@ public class JavaLesson19 {
 
     public static void regexReplace(String str2Replace) {
         // way to find case insensitve string, same as [A-Za-z]+
-        Pattern replace = Pattern.compile("[A-Z]+", Pattern.CASE_INSENSITIVE);
+//        Pattern replace = Pattern.compile("[A-Z]+", Pattern.CASE_INSENSITIVE);
+        Pattern replace = Pattern.compile("\\s+");
+        Matcher regexMatcher = replace.matcher(str2Replace.trim());
+        System.out.println(regexMatcher.replaceAll(", "));
     }
+
 }
