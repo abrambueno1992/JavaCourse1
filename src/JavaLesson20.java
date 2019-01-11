@@ -24,6 +24,12 @@ public class JavaLesson20 extends JFrame {
 
         this.setTitle("My First Frame Name");
 
+        JPanel thePanel = new JPanel();
+        JLabel label1 = new JLabel("Tell me something");
+        thePanel.add(label1);
+
+        this.add(thePanel);
+
         this.setVisible(true);
     }
 }
