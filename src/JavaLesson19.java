@@ -39,6 +39,7 @@ public class JavaLesson19 {
 
         // (555)555-555 1-(555)555-555
         regexChecker("([0-9]( |-)?)?(\\(?[0-9]{3}\\)?|[0-9]{3})( |-)?([0-9]{3}( |-)?[0-9]{4}|[a-zA-Z0-9]{7})", longString);
+
     }
 
     public static void regexChecker(String theRegex, String str2Check) {
@@ -52,5 +53,10 @@ public class JavaLesson19 {
             System.out.println("Start index: " + regexMatcher.start());
             System.out.println("End Index: " + regexMatcher.end());
         }
+    }
+
+    public static void regexReplace(String str2Replace) {
+        // way to find case insensitve string, same as [A-Za-z]+
+        Pattern replace = Pattern.compile("[A-Z]+", Pattern.CASE_INSENSITIVE);
     }
 }
