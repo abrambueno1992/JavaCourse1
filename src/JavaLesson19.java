@@ -1,3 +1,4 @@
+import java.nio.file.LinkOption;
 import java.util.regex.*;
 public class JavaLesson19 {
     public static void main(String[] args) {
@@ -18,6 +19,10 @@ public class JavaLesson19 {
         // \\d digits, \\D not digits, {5} 5 elements
         // zip codes
         regexChecker("\\s\\d{5}\\s", longString);
+
+        // starts with C or A
+        // A[KLRZ] | C[AOT]
+        regexChecker("A[KLRZ]|C[AOT]", longString);
     }
 
     public static void regexChecker(String theRegex, String str2Check) {
