@@ -26,6 +26,8 @@ public class JavaLesson19 {
 
         // {n,} to find the minimum, + one or more, .^*+?{}[]\|() characters that always need backlash
         regexChecker("(\\{{1,})", strangeString);
+        // . find anything not a space
+        regexChecker(".{3}", strangeString);
 
     }
 
