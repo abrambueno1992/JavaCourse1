@@ -63,5 +63,8 @@ public class JavaLesson20 extends JFrame {
         this.add(thePanel);
 
         this.setVisible(true);
+
+        textField1.requestFocus();
+        textArea1.requestFocus();
     }
 }
