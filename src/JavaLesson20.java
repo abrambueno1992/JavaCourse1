@@ -26,6 +26,8 @@ public class JavaLesson20 extends JFrame {
 
         JPanel thePanel = new JPanel();
         JLabel label1 = new JLabel("Tell me something");
+        label1.setText("New Text");
+        label1.setToolTipText("Doesn't Do ANYTHING");
         thePanel.add(label1);
 
         this.add(thePanel);
