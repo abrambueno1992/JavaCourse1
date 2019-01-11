@@ -18,6 +18,8 @@ public class JavaLesson20 extends JFrame {
 
         this.setLocation(xPos, yPos);
 
+        this.setResizable(false);
+
         this.setVisible(true);
     }
 }
