@@ -20,6 +20,8 @@ public class JavaLesson20 extends JFrame {
 
         this.setResizable(false);
 
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
         this.setVisible(true);
     }
 }
