@@ -32,10 +32,17 @@ public class JavaLesson20 extends JFrame {
 
         JButton button1 = new JButton("Send");
 
-        button1.setBorderPainted(false);
-        button1.setContentAreaFilled(false);
+//        button1.setBorderPainted(false);
+//        button1.setContentAreaFilled(false);
         button1.setText("New Button");
         button1.setToolTipText("It's a button");
+
+        JTextField textField1 = new JTextField("Type here", 15);
+        textField1.setColumns(10);
+        textField1.setText("Type again");
+        textField1.setToolTipText("It's a field");
+
+        thePanel.add(textField1);
 
         thePanel.add(button1);
 
