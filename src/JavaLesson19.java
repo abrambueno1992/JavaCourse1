@@ -2,7 +2,7 @@ import java.util.regex.*;
 public class JavaLesson19 {
     public static void main(String[] args) {
 
-        String longString = " Aaab Band CA 1357 AA (555)555-555 checking";
+        String longString = " Aaab Band CA 13577 AA (555)555-555 checking";
         String strangeString = " 1Z bbb *** *** {{{ {{ { ";
 
         /*
@@ -14,6 +14,10 @@ public class JavaLesson19 {
         // Word that is 2 to 20 characters in length
         //[A-Za-z]{2,20} or \\w{2,20}
         regexChecker("\\s[A-Za-z]{2,20}\\s", longString);
+
+        // \\d digits, \\D not digits, {5} 5 elements
+        // zip codes
+        regexChecker("\\s\\d{5}\\s", longString);
     }
 
     public static void regexChecker(String theRegex, String str2Check) {
