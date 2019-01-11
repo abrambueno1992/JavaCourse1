@@ -30,6 +30,15 @@ public class JavaLesson20 extends JFrame {
         label1.setToolTipText("Doesn't Do ANYTHING");
         thePanel.add(label1);
 
+        JButton button1 = new JButton("Send");
+
+        button1.setBorderPainted(false);
+        button1.setContentAreaFilled(false);
+        button1.setText("New Button");
+        button1.setToolTipText("It's a button");
+
+        thePanel.add(button1);
+
         this.add(thePanel);
 
         this.setVisible(true);
