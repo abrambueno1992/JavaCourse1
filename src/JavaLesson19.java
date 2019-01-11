@@ -13,6 +13,7 @@ public class JavaLesson19 {
          */
         // Word that is 2 to 20 characters in length
         //[A-Za-z]{2,20} or \\w{2,20}
+        regexChecker("\\s[A-Za-z]{2,20}\\s", longString);
     }
 
     public static void regexChecker(String theRegex, String str2Check) {
