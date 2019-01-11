@@ -22,6 +22,8 @@ public class JavaLesson20 extends JFrame {
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
+        this.setTitle("My First Frame Name");
+
         this.setVisible(true);
     }
 }
