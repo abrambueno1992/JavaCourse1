@@ -3,7 +3,7 @@ import java.util.regex.*;
 public class JavaLesson19 {
     public static void main(String[] args) {
 
-        String longString = " Aaab Band CA AK 13577 AA (555)555-555 checking";
+        String longString = " Aaab Band CA AK 13577 AA (555)555-555 checking fakeEmail@gmail.com";
         String strangeString = " 1Z bbb *** *** {{{ {{ { ";
 
         /*
@@ -29,6 +29,13 @@ public class JavaLesson19 {
         // . find anything not a space
         regexChecker(".{3}", strangeString);
 
+        // \\w find any word type character === [A-Za-z0-9_]
+        // \\W doesn't match any word type character
+        // * zero or more times
+        regexChecker("\\w*", strangeString);
+
+        // fakeEmail@gmail.com
+        regexChecker("[A-Za-z0-9._%-]+@[A-Za-z0-9._%-]+\\.[A-Za-z]{2,4}", longString);
     }
 
     public static void regexChecker(String theRegex, String str2Check) {
