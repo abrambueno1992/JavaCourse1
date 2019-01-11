@@ -3,7 +3,7 @@ import java.util.regex.*;
 public class JavaLesson19 {
     public static void main(String[] args) {
 
-        String longString = " Aaab Band CA 13577 AA (555)555-555 checking";
+        String longString = " Aaab Band CA AK 13577 AA (555)555-555 checking";
         String strangeString = " 1Z bbb *** *** {{{ {{ { ";
 
         /*
@@ -23,6 +23,9 @@ public class JavaLesson19 {
         // starts with C or A
         // A[KLRZ] | C[AOT]
         regexChecker("A[KLRZ]|C[AOT]", longString);
+
+        // {n,} to find the minimum, + one or more, .^*+?{}[]\|() characters that always need backlash
+
     }
 
     public static void regexChecker(String theRegex, String str2Check) {
