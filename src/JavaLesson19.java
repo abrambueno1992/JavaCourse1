@@ -25,6 +25,7 @@ public class JavaLesson19 {
         regexChecker("A[KLRZ]|C[AOT]", longString);
 
         // {n,} to find the minimum, + one or more, .^*+?{}[]\|() characters that always need backlash
+        regexChecker("(\\{{1,})", strangeString);
 
     }
 
