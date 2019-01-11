@@ -36,6 +36,9 @@ public class JavaLesson19 {
 
         // fakeEmail@gmail.com
         regexChecker("[A-Za-z0-9._%-]+@[A-Za-z0-9._%-]+\\.[A-Za-z]{2,4}", longString);
+
+        // (555)555-555 1-(555)555-555
+        regexChecker("([0-9]( |-)?)?(\\(?[0-9]{3}\\)?|[0-9]{3})( |-)?([0-9]{3}( |-)?[0-9]{4}|[a-zA-Z0-9]{7})", longString);
     }
 
     public static void regexChecker(String theRegex, String str2Check) {
