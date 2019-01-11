@@ -14,4 +14,17 @@ public class JavaLesson19 {
         // Word that is 2 to 20 characters in length
         //[A-Za-z]{2,20} or \\w{2,20}
     }
+
+    public static void regexChecker(String theRegex, String str2Check) {
+        Pattern checkRegex = Pattern.compile(theRegex);
+        Matcher regexMatcher = checkRegex.matcher(str2Check);
+
+        while (regexMatcher.find()) {
+            if (regexMatcher.group().length() != 0) {
+                System.out.println(regexMatcher.group().trim());
+            }
+            System.out.println("Start index: " + regexMatcher.start());
+            System.out.println("End Index: " + regexMatcher.end());
+        }
+    }
 }
