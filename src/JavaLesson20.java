@@ -48,8 +48,13 @@ public class JavaLesson20 extends JFrame {
 
         JTextArea textArea1 = new JTextArea(15, 20);
 
-        textArea1.setText("Jus a whole bunch of text that is important");
+        textArea1.setText("Jus a whole bunch of text that is important\n");
         textArea1.setLineWrap(true);
+        textArea1.setWrapStyleWord(true);
+
+        int numOfLines = textArea1.getLineCount();
+
+        textArea1.append(" number of lines: " + numOfLines);
 
         JScrollPane scrollBar1 = new JScrollPane(textArea1, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
 
