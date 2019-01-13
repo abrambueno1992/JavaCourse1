@@ -97,7 +97,7 @@ public class JavaLesson21 extends JFrame {
 
         @Override
         public void windowOpened(WindowEvent e) {
-
+            textArea1.append("Window Created");
         }
 
         @Override
@@ -112,11 +112,12 @@ public class JavaLesson21 extends JFrame {
 
         @Override
         public void windowIconified(WindowEvent e) {
-
+            textArea1.append("Window is minimized");
         }
 
         @Override
         public void windowDeiconified(WindowEvent e) {
+            textArea1.append("Window in Normal State");
 
         }
 
@@ -127,6 +128,7 @@ public class JavaLesson21 extends JFrame {
 
         @Override
         public void windowDeactivated(WindowEvent e) {
+            textArea1.append("Window is Not Active");
 
         }
     }
