@@ -39,20 +39,33 @@ public class JavaLesson21 extends JFrame {
 
         thePanel.add(button1);
 
-        textField1 = new JTextField("Type here", 15);
+        textField1 = new JTextField("", 15);
+
+        ListenForKeys lForKeys = new ListenForKeys();
+
+        textField1.addKeyListener(lForKeys);
+
+        thePanel.add(textField1);
+
+        textArea1 = new JTextArea(15, 20);
+
+        textArea1.setText("");
+        textArea1.setLineWrap(true);
+        textArea1.setWrapStyleWord(true);
     }
 
-
-
-}
 
 // implements listeners
 
-private class ListenForButton implements ActionListener {
-    public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == button1) {
-            buttonClicked++;
-            textArea1.append("Button clicked " + buttonCliced + " times\n");
+    private class ListenForButton implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
+            if (e.getSource() == button1) {
+                buttonClicked++;
+                textArea1.append("Button clicked " + buttonCliced + " times\n");
+            }
         }
     }
+
+
 }
+
