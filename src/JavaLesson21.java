@@ -73,7 +73,7 @@ public class JavaLesson21 extends JFrame {
         public void actionPerformed(ActionEvent e) {
             if (e.getSource() == button1) {
                 buttonClicked++;
-                textArea1.append("Button clicked " + buttonCliced + " times\n");
+                textArea1.append("Button clicked " + buttonClicked + " times\n");
             }
         }
     }
@@ -140,7 +140,10 @@ public class JavaLesson21 extends JFrame {
 
         @Override
         public void mouseClicked(MouseEvent e) {
-
+            textArea1.append("Mouse Panel pos: " + e.getX() + " " + e.getY() + "\n");
+            textArea1.append("Mouse Screen pos: " + e.getXOnScreen() + " " + e.getYOnScreen() + "\n");
+            textArea1.append("Mouse Button: " + e.getButton() +"\n");
+            textArea1.append("Mouse Clicks: " + e.getClickCount() + "\n");
         }
 
         @Override
