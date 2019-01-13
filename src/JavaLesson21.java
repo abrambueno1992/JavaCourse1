@@ -4,6 +4,11 @@ import javax.swing.*;
 
 import java.awt.event.*;
 public class JavaLesson21 extends JFrame {
+    JButton button1;
+    JTextField textField1;
+    JTextArea textArea1;
+    int buttonClicked;
+    
     public static void  main(String[] args) {
         new JavaLesson21();
     }
