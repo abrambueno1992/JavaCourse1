@@ -24,6 +24,18 @@ public class JavaLesson21 extends JFrame {
         int yPos = (dim.height / 2) - (this.getHeight() / 2);
 
         this.setLocation(xPos, yPos);
+
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        this.setTitle("My Second Frame");
+
+        JPanel thePanel = new JPanel();
+
+        button1 = new JButton("Click Here");
+
+        thePanel.add(button1);
+
+        textField1 = new JTextField("Type here", 15);
     }
 
 }
