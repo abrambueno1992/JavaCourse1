@@ -61,6 +61,9 @@ public class JavaLesson21 extends JFrame {
         this.addWindowListener(lForWindow);
 
         this.setVisible(true);
+
+        ListenForMouse lForMouse = new ListenForMouse();
+        thePanel.addMouseListener(lForMouse);
     }
 
 
@@ -129,6 +132,34 @@ public class JavaLesson21 extends JFrame {
         @Override
         public void windowDeactivated(WindowEvent e) {
             textArea1.append("Window is Not Active");
+
+        }
+    }
+
+    private class ListenForMouse implements MouseListener {
+
+        @Override
+        public void mouseClicked(MouseEvent e) {
+
+        }
+
+        @Override
+        public void mousePressed(MouseEvent e) {
+
+        }
+
+        @Override
+        public void mouseReleased(MouseEvent e) {
+
+        }
+
+        @Override
+        public void mouseEntered(MouseEvent e) {
+
+        }
+
+        @Override
+        public void mouseExited(MouseEvent e) {
 
         }
     }
