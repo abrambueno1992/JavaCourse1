@@ -49,9 +49,12 @@ public class JavaLesson21 extends JFrame {
 
         textArea1 = new JTextArea(15, 20);
 
-        textArea1.setText("");
+        textArea1.setText("Tracking Events\n");
         textArea1.setLineWrap(true);
         textArea1.setWrapStyleWord(true);
+        JScrollPane scrollbar1 = new JScrollPane(textArea1, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+        thePanel.add(scrollbar1);
+        this.add(thePanel);
     }
 
 
