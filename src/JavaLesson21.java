@@ -49,5 +49,10 @@ public class JavaLesson21 extends JFrame {
 // implements listeners
 
 private class ListenForButton implements ActionListener {
-    
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == button1) {
+            buttonClicked++;
+            textArea1.append("Button clicked " + buttonCliced + " times\n");
+        }
+    }
 }
