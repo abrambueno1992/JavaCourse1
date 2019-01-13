@@ -55,6 +55,12 @@ public class JavaLesson21 extends JFrame {
         JScrollPane scrollbar1 = new JScrollPane(textArea1, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
         thePanel.add(scrollbar1);
         this.add(thePanel);
+
+        ListenForWindow lForWindow = new ListenForWindow();
+
+        this.addWindowListener(lForWindow);
+
+        this.setVisible(true);
     }
 
 
