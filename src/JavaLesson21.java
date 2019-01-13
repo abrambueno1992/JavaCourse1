@@ -66,6 +66,24 @@ public class JavaLesson21 extends JFrame {
         }
     }
 
+    private class ListenForKeys implements KeyListener {
+// Handle the key typed event from the text field.
+        public void keyTyped(KeyEvent e) {
+            textArea1.append("Key Hit: " + e.getKeyChar() + "\n");
+        }
+
+        // Handle the key-pressed event from the text field.
+        public void keyPressed(KeyEvent e) {
+
+        }
+
+        // Handle the key-released event from the text field.
+        public void keyReleased(KeyEvent e) {
+
+        }
+
+    }
+
 
 }
 
