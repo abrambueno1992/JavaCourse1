@@ -33,9 +33,21 @@ public class JavaLesson21 extends JFrame {
 
         button1 = new JButton("Click Here");
 
+        ListenForButton lForButton = new ListenForButton();
+
+        button1.addActionListener(lForButton);
+
         thePanel.add(button1);
 
         textField1 = new JTextField("Type here", 15);
     }
 
+
+
+}
+
+// implements listeners
+
+private class ListenForButton implements ActionListener {
+    
 }
